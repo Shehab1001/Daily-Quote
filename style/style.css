@@ -1,0 +1,85 @@
+/* !<Global> */
+
+* {
+  box-sizing: border-box;
+}
+
+
+:root {
+  --primary-color: #1c1c1c;
+  --secondary-color: #0066ff;
+  --tertiary-color: #147bdc;
+  --main-font: "Montserrat", sans-serif;
+  --quote-font: "Kalnia", serif;
+  --author-font: "Dancing Script", cursive;
+}
+
+.secondary-color {
+  color: var(--secondary-color);
+}
+
+.tertiary-color {
+  color: var(--tertiary-color);
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--primary-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--main-font);
+  color: var(--tertiary-color);
+}
+
+.quote {
+  font-family: var(--quote-font);
+  color: var(--primary-color);
+}
+
+.author {
+  font-family: var(--author-font);
+  color: var(--secondary-color);
+}
+
+/* !</Global> */
+
+/* &<header> */
+
+#main.main {
+  background-image: linear-gradient(rgba(24, 14, 210, 0.138), rgba(86, 48, 190, 0.4)),
+    url(images/overlay-bg.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--tertiary-color);
+  --bs-btn-border-color: var(--tertiary-color);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--tertiary-color);
+  --bs-btn-hover-border-color: var(--tertiary-color);
+  --bs-btn-focus-shadow-rgb: 13,110,253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--tertiary-color);
+  --bs-btn-active-border-color: var(--tertiary-color);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: var(--tertiary-color);
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: var(--tertiary-color);
+  --bs-gradient: none;
+}
+
+/* &</header> */

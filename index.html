@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quotes App</title>
+    <link
+      rel="shortcut icon"
+      href="images/quote-left-solid.svg"
+      type="image/x-icon"
+    />
+
+    <!-- ~Bootstrap -->
+ <link rel="stylesheet" href="style/bootstrap.min.css">
+
+    <!-- #Font Awesome -->
+  <link rel="stylesheet" href="style/all.min.css">
+
+
+
+
+    <!-- !CSS Style -->
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <!-- &<header> -->
+
+    <header id="main" class="main py-4 py-sm-5 ">
+      <div class="container-md  w-100 h-100 rounded-5 text-center p-4 p-sm-5">
+        <h1 class="display-2 fw-bolder mb-3 mb-sm-4 ">Quote of the Day</h1>
+        <p class="fs-5 fw-semibold secondary-color mb-4">Press the button below to receive a random quote!</p>
+        <div><i class="fa-solid fa-quote-left display-3 mb-3 tertiary-color"></i></div>
+        <p id="quote" class="quote fs-4 fw-semibold"> “The Random Quote.” </p>
+        <p id="author" class="author fs-4 mb-0"> The Author </p>
+        <div><i class="fa-solid fa-quote-right display-3 mt-3 tertiary-color"></i></i></div>
+        <button onclick=displayQuoteToUser() class="btn btn-lg btn-outline-primary mt-4">New Quote</button>
+      </div>
+    </header>
+
+    <!-- &<header> -->
+
+    <!-- ^<js> -->
+
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- ^</js> -->
+  </body>
+</html>
